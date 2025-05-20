@@ -12,6 +12,23 @@
     <button id="betweenness-btn">Calculate Betweenness Centrality</button>
     <button id="cluster-btn">Identify Clusters (Sample)</button>
     <button id="rank-btn">Rank by Betweenness</button>
+
+    <div class="csv-upload-section">
+      <p class="csv-instructions">
+        <strong>CSV Format:</strong><br>
+        Nodes CSV: Must have an 'ip_address' column (will be used as node ID).<br>
+        Edges CSV: Must have 'fm_ip' (source IP) and 'to_ip' (target IP) columns.
+      </p>
+      <div>
+        <label for="nodes-file-input">Nodes CSV:</label>
+        <input type="file" id="nodes-file-input" accept=".csv">
+      </div>
+      <div>
+        <label for="edges-file-input">Edges CSV:</label>
+        <input type="file" id="edges-file-input" accept=".csv">
+      </div>
+      <button id="load-csv-btn">Load Data from CSVs</button>
+    </div>
   </div>
   <div id="status-message"></div>
   <script src="script.js" defer></script>

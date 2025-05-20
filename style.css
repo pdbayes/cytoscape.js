@@ -56,3 +56,60 @@ body, html {
 #cy node {
   transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
+
+/* CSV Upload Section Styling */
+.csv-upload-section {
+  margin-top: 20px; /* Increased margin-top for better separation */
+  padding-top: 15px; /* Increased padding for more space */
+  border-top: 1px solid #ddd; /* Slightly darker border */
+  width: 100%; /* Make the section take full width of controls */
+  max-width: 400px; /* Limit max width for better aesthetics in flex container */
+  margin-left: auto; /* Center if controls div is wider */
+  margin-right: auto; /* Center if controls div is wider */
+  padding-left: 10px; /* Add padding to align with other controls if necessary */
+  padding-right: 10px; /* Add padding */
+  box-sizing: border-box;
+}
+
+.csv-upload-section label {
+  display: block;
+  margin-top: 8px; /* Increased margin */
+  margin-bottom: 3px; /* Increased margin */
+  font-size: 0.9em;
+  color: #333;
+  font-weight: bold; /* Make labels slightly bolder */
+}
+
+.csv-upload-section input[type="file"] {
+  margin-bottom: 12px; /* Increased margin */
+  font-size: 0.9em;
+  width: 100%;
+  padding: 8px; /* Increased padding */
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Add a light border */
+  border-radius: 4px;
+}
+
+.csv-instructions {
+  font-size: 0.85em;
+  color: #444; /* Slightly darker text for better readability */
+  background-color: #f7f7f7; /* Slightly different background */
+  padding: 10px; /* Increased padding */
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 15px; /* Add margin below instructions */
+  border: 1px solid #e0e0e0; /* Slightly different border */
+  line-height: 1.4; /* Improve line spacing */
+}
+
+.csv-instructions strong {
+  color: #000; /* Make strong text black for emphasis */
+}
+
+/* Ensure controls div can wrap if content is too wide */
+#controls {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
