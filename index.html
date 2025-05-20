@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cytoscape Application</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"></script>
+</head>
+<body>
+  <div id="cy"></div>
+  <div id="controls">
+    <button id="load-data-btn">Load Sample Data</button>
+    <button id="betweenness-btn">Calculate Betweenness Centrality</button>
+    <button id="cluster-btn">Identify Clusters (Sample)</button>
+    <button id="rank-btn">Rank by Betweenness</button>
+  </div>
+  <div id="status-message"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>

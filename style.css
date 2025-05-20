@@ -1,0 +1,58 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#cy {
+  height: 80vh;
+  width: 100%;
+  border: 1px solid black;
+  display: block;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#controls button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+#controls button:hover {
+  background-color: #e0e0e0;
+}
+
+#status-message {
+  text-align: center;
+  padding: 10px;
+  color: #333;
+  margin-top: 15px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+#status-message ol {
+  list-style-position: inside; /* Indent list numbers */
+  padding-left: 0; /* Remove default browser padding */
+  text-align: left; /* Align text to the left for list items */
+  max-width: 500px; /* Limit width for better readability */
+  margin: 10px auto; /* Center the list block */
+}
+
+#status-message li {
+  padding: 3px 0; /* Add some spacing between list items */
+}
+
+/* Generic transition for Cytoscape nodes - if not handled by JS */
+#cy node {
+  transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
